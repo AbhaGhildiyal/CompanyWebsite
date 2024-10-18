@@ -30,15 +30,19 @@ img {
 *::before {
   box-sizing: border-box;
 }
+.logo {
+  margin-left: 3rem;
+  height: 100px;
+}
 body {
   margin: 0;
-  background-color: var(--clr-accent-400);
-  color: var(--clr-neutral-100);
+  background-color: darkcyan;
+  color: darkgreen;
   font-family: var(--ff-base);
   font-size: var(--fs-300);
   font-weight: var(--fw-regular);
 }
-.hex-container {
+/*.hex-container {
   width: 95%;
   display: grid;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, -0.3)),
@@ -57,10 +61,7 @@ body {
 .upper-navbar a {
   width: fit-content;
 }
-.logo {
-  margin-left: 3rem;
-  height: 100px;
-}
+
 .contact-info {
   display: grid;
   grid-template-columns: 8rem 7rem;
@@ -97,7 +98,7 @@ nav li {
 nav li a {
   text-decoration: none;
   color: inherit;
-}
+}*/
 
 .heading-grid {
   display: grid;
@@ -146,19 +147,20 @@ aside::before {
   color: var(--clr-neutral-100);
   font-weight: var(--fw-bold);
   text-align: left;
-  background-color: var(--clr-secondary-400);
+  background-color: mediumspringgreen;
   border: none;
   border-radius: 15px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
 .slogan button:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
+  box-shadow: 0 4px 6px rgba(27, 179, 16, 0.184);
+  background-color: rgb(5, 70, 45);
 }
 .slogan p {
   width: fit-content;
   font-weight: var(--fw-semi-bold);
-  background-color: rgba(126, 167, 242, 0.152);
+  background-color: rgba(9, 91, 16, 0.152);
 }
 /* ABOUT US SECTION */
 .about-us {
@@ -298,7 +300,7 @@ div.custom-aside {
   padding-bottom: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  background: #3e3e4b52;
+  background: #6aef9952;
 }
 .container3 img {
   margin-left: 10rem;
