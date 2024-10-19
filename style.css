@@ -381,6 +381,13 @@ div.custom-aside {
   left: 0;
 }
 
+.copyright p{
+  text-align: center; 
+  background: #3e3e4b52; 
+  margin: 0; 
+  padding-bottom: 15px;
+}
+
 .services-col {
   overflow: hidden;
 }
