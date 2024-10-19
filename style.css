@@ -347,7 +347,7 @@ footer{
 .container3 {
   padding: 3rem 2rem;
   display: grid;
-  grid-template-columns: 1.2fr 1.2fr 1.2fr;
+  grid-template-columns: 1.5fr 1.2fr 1.2fr;
   background: #3e3e4b52;
 }
 .container3 img {
@@ -355,7 +355,7 @@ footer{
 }
 
 .brand-slogan{
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .slogan-p1, .slogan-p2{
