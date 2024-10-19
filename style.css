@@ -54,7 +54,7 @@ body {
 }
 
 .hex-container {
-  width: 95%;
+  width: 100%;
   display: grid;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, -0.3)),
     url("/pic/Factory_Shed.jpg");
@@ -68,6 +68,8 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 .upper-navbar a {
   width: fit-content;
