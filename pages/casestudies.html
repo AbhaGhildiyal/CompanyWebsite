@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Studies - Shubham Engineers</title>
+  <link rel="stylesheet" href="../CSS/variables.css">
+  <link rel="stylesheet" href="../CSS/about.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Outfit:wght@300;400;700&family=Poppins:wght@100;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+  <link rel="manifest" href="/public/site.webmanifest">
+</head>
+
+<body>
+  <script>
+    // Fetch and insert header content
+    fetch('header.html')
+      .then(response => response.text())
+      .then(content => {
+        const header = document.createElement('div');
+        header.innerHTML = content;
+        document.body.prepend(header);
+      });
+
+    // Fetch and insert footer content
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(content => {
+        const footer = document.createElement('div');
+        footer.innerHTML = content;
+        document.body.appendChild(footer);
+      });
+  </script>
+  <h1 class="main-heading">CASE STUDIES</h1>
+  <div class="paragraph">
+    <div class="column">
+      <div class="column-title">
+        <h2>AUTOMOTIVE INNOVATION</h2>
+      </div>
+      <p>Client: Major Automotive Manufacturer</p>
+      <p>Challenge: Develop a lightweight, high-strength component for electric vehicles.</p>
+      <p>Solution: Our team engineered a novel composite material, reducing weight by 30% while maintaining structural integrity.</p>
+      <p>Result: Improved vehicle efficiency and extended range, leading to a 15% increase in sales for the client's EV line.</p>
+    </div>
+    <div class="column">
+      <div class="column-title">
+        <h2>AEROSPACE ADVANCEMENT</h2>
+      </div>
+      <p>Client: Leading Aerospace Company</p>
+      <p>Challenge: Create a more efficient cooling system for aircraft engines.</p>
+      <p>Solution: Developed an innovative heat exchanger using advanced 3D printing techniques.</p>
+      <p>Result: 25% improvement in cooling efficiency, resulting in longer engine life and reduced maintenance costs.</p>
+    </div>
+    <div class="column">
+      <div class="column-title">
+        <h2>RENEWABLE ENERGY BREAKTHROUGH</h2>
+      </div>
+      <p>Client: Solar Energy Start-up</p>
+      <p>Challenge: Increase the efficiency of solar panels in low-light conditions.</p>
+      <p>Solution: Engineered a new nano-coating that enhances light absorption.</p>
+      <p>Result: 20% increase in energy production during overcast days, expanding the viability of solar installations.</p>
+    </div>
+    <div class="column">
+      <div class="column-title">
+        <h2>MEDICAL DEVICE INNOVATION</h2>
+      </div>
+      <p>Client: Healthcare Technology Company</p>
+      <p>Challenge: Design a more accurate and less invasive glucose monitoring device.</p>
+      <p>Solution: Created a miniaturized sensor using advanced microfluidics and biosensing technologies.</p>
+      <p>Result: 40% improvement in accuracy and patient comfort, leading to rapid adoption in hospitals worldwide.</p>
+    </div>
+    <div class="column">
+      <div class="column-title">
+        <h2>INDUSTRIAL AUTOMATION</h2>
+      </div>
+      <p>Client: Large Manufacturing Conglomerate</p>
+      <p>Challenge: Optimize production line efficiency and reduce downtime.</p>
+      <p>Solution: Implemented an AI-driven predictive maintenance system integrated with IoT sensors.</p>
+      <p>Result: 50% reduction in unplanned downtime and 20% increase in overall equipment effectiveness.</p>
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
