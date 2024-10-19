@@ -328,7 +328,7 @@ div.custom-aside {
   /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 14% 100%, 0 83%); */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
   cursor: pointer;
-  transition: all 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 .services-col img {
   width: 100%;
@@ -336,7 +336,7 @@ div.custom-aside {
 }
 
 .services-col:hover{
-  transform: scale(1.12);
+  transform: scale(1.05);
 }
 
 /* Footer area */
@@ -390,14 +390,6 @@ div.custom-aside {
 
 .services-col {
   overflow: hidden;
-}
-
-.service-item {
-  transition: transform 0.3s ease;
-}
-
-.service-item:hover {
-  transform: scale(1.1);
 }
 
 .service-img {
