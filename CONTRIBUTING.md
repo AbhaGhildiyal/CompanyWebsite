@@ -30,7 +30,11 @@ Here are a few ways you can contribute to NexaSite:
     git push origin feature/your-feature-name
     ```
 7. **Submit a pull request (PR)** detailing what you've added or improved.
-
+- Do not forget to 
+  ```bash
+  git pull 
+  ```
+  Before submitting a PR 
 ## Contribution Guidelines
 To ensure smooth collaboration, please follow these guidelines:
 - **Respect the design vision.** NexaSite is meant to be a creative, fun project, but keep the overall aesthetic and user experience in mind.
