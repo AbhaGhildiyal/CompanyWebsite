@@ -29,6 +29,20 @@ img {
 *::after,
 *::before {
   box-sizing: border-box;
+  cursor: none !important; 
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  border: 1px solid white;
+  pointer-events: none;
+  transition: width 0.1s ease, height 0.1s ease, border-radius 0.1s ease, transform 0.1s ease, background-color 0.1s ease, border 0.1s ease;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
 }
 .logo {
   margin-left: 3rem;
@@ -42,7 +56,7 @@ body {
   font-size: var(--fs-300);
   font-weight: var(--fw-regular);
 }
-/*.hex-container {
+.hex-container {
   width: 95%;
   display: grid;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, -0.3)),
@@ -57,6 +71,8 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 .upper-navbar a {
   width: fit-content;
@@ -67,6 +83,7 @@ body {
   grid-template-columns: 8rem 7rem;
   align-items: center;
   height: 49px;
+  gap: 20px;
 }
 .button-contact {
   padding: 0.7rem;
@@ -96,9 +113,10 @@ nav li {
   position: relative;
 }
 nav li a {
+  position: relative;
   text-decoration: none;
   color: inherit;
-}*/
+}
 
 .heading-grid {
   display: grid;
@@ -196,9 +214,16 @@ p.second-para {
   color: #ffffff75;
   width: 13rem;
 }
+
+.about-img-container {
+  position: relative;
+  height: 320px; /* The height of image */
+}
+
 img.about-us-img {
-  margin-left: 48rem;
-  margin-top: -4rem;
+  position: absolute;
+  right: 0;
+  margin-top: -2rem;
   margin-bottom: 0.3rem;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 14% 100%, 0 83%);
 }
@@ -310,8 +335,37 @@ div.custom-aside {
   margin: 1rem;
 }
 .footerabout li a {
+  position: relative;
   text-decoration: none;
   color: inherit;
+  transition: color 0.3s ease;
+}
+
+.footerabout li a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--clr-secondary-400);
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.footerabout li a:hover {
+  color: var(--clr-secondary-400);
+}
+
+.footerabout li a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.copyright p{
+  text-align: center; 
+  background: #3e3e4b52; 
+  margin: 0; 
+  padding-bottom: 15px;
 }
 
 .services-col {
