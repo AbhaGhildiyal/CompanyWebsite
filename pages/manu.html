@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manufacturing Process - Shubham Engineers</title>
+  <link rel="stylesheet" href="../CSS/variables.css">
+  <link rel="stylesheet" href="../CSS/about.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Outfit:wght@300;400;700&family=Poppins:wght@100;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+  <link rel="manifest" href="/public/site.webmanifest">
+</head>
+
+<body>
+  <script>
+    // Fetch and insert header content
+    fetch('header.html')
+      .then(response => response.text())
+      .then(content => {
+        const header = document.createElement('div');
+        header.innerHTML = content;
+        document.body.prepend(header);
+      });
+
+    // Fetch and insert footer content
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(content => {
+        const footer = document.createElement('div');
+        footer.innerHTML = content;
+        document.body.appendChild(footer);
+      });
+  </script>
+  <h1 class="main-heading">MANUFACTURING PROCESS</h1>
+  <div class="paragraph">
+    <div class="column">
+      <div class="column-title">
+        <h2>OVERVIEW</h2>
+      </div>
+      <p>At Shubham Engineers, our manufacturing process is the backbone of our operations. We employ cutting-edge technology and lean manufacturing principles to ensure efficiency, quality, and sustainability in all our production activities.</p>
+    </div>
+    <div class="column">
+      <div class="column-title">
+        <h2>KEY STAGES</h2>
+      </div>
+      <ol>
+        <li>Design and Engineering: Our process begins with detailed design and engineering, utilizing advanced CAD/CAM software.</li>
+        <li>Material Sourcing: We carefully select high-quality materials from trusted suppliers to ensure product integrity.</li>
+        <li>Precision Machining: State-of-the-art CNC machines are used for accurate and efficient component production.</li>
+        <li>Assembly: Skilled technicians assemble components with meticulous attention to detail.</li>
+        <li>Quality Control: Rigorous testing and inspection procedures are implemented at every stage.</li>
+      </ol>
+    </div>
+    <div class="column">
+      <div class="column-title">
+        <h2>ADVANCED TECHNOLOGIES</h2>
+      </div>
+      <p>We leverage advanced manufacturing technologies including:</p>
+      <ul>
+        <li>3D Printing for rapid prototyping</li>
+        <li>Robotic automation for increased precision and efficiency</li>
+        <li>IoT-enabled machines for real-time monitoring and predictive maintenance</li>
+        <li>Advanced materials for enhanced product performance</li>
+      </ul>
+    </div>
+    <div class="column">
+      <div class="column-title">
+        <h2>QUALITY ASSURANCE</h2>
+      </div>
+      <p>Our commitment to quality is unwavering. We adhere to strict quality control measures, including:</p>
+      <ul>
+        <li>ISO 9001:2015 certified processes</li>
+        <li>Six Sigma methodologies for continuous improvement</li>
+        <li>Non-destructive testing techniques</li>
+        <li>Comprehensive documentation and traceability</li>
+      </ul>
+    </div>
+    <div class="column">
+      <div class="column-title">
+        <h2>SUSTAINABILITY</h2>
+      </div>
+      <p>We are committed to sustainable manufacturing practices, focusing on:</p>
+      <ul>
+        <li>Energy efficiency and renewable energy use</li>
+        <li>Waste reduction and recycling programs</li>
+        <li>Water conservation initiatives</li>
+        <li>Eco-friendly material alternatives where possible</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
