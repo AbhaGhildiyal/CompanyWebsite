@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research & Development - Shubham Engineers</title>
+  <link rel="stylesheet" href="../CSS/variables.css">
+  <link rel="stylesheet" href="../CSS/about.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Outfit:wght@300;400;700&family=Poppins:wght@100;300;400;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+  <link rel="manifest" href="/public/site.webmanifest">
+</head>
+
+<body>
+  <script>
+    // Fetch and insert header content
+    fetch('header.html')
+      .then(response => response.text())
+      .then(content => {
+        const header = document.createElement('div');
+        header.innerHTML = content;
+        document.body.prepend(header);
+      });
+
+    // Fetch and insert footer content
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(content => {
+        const footer = document.createElement('div');
+        footer.innerHTML = content;
+        document.body.appendChild(footer);
+      });
+  </script>
+  <h1 class="main-heading">RESEARCH & DEVELOPMENT</h1>
+  <div class="paragraph">
+    <div class="column">
+      <div class="column-title">
+        <h2>INNOVATION HUB</h2>
+      </div>
+      <p>At Shubham Engineers, our R&D department is the heart of innovation. We continuously push the boundaries of engineering to develop cutting-edge solutions that address complex industrial challenges.</p>
+    </div>
+    <div class="column">
+      <div class="column-title">
+        <h2>FOCUS AREAS</h2>
+      </div>
+      <ul>
+        <li>Advanced Materials: Developing new alloys and composites for enhanced performance.</li>
+        <li>Smart Manufacturing: Integrating IoT and AI into production processes.</li>
+        <li>Sustainable Technologies: Creating eco-friendly solutions for a greener future.</li>
+        <li>Precision Engineering: Improving accuracy and efficiency in manufacturing.</li>
+      </ul>
+    </div>
+    <div class="column">
+      <div class="column-title">
+        <h2>COLLABORATIVE APPROACH</h2>
+      </div>
+      <p>Our R&D team collaborates with:</p>
+      <ul>
+        <li>Leading universities and research institutions</li>
+        <li>Industry partners and clients</li>
+        <li>Government research agencies</li>
+        <li>International technology consortiums</li>
+      </ul>
+    </div>
+    <div class="column">
+      <div class="column-title">
+        <h2>STATE-OF-THE-ART FACILITIES</h2>
+      </div>
+      <p>Our R&D center is equipped with:</p>
+      <ul>
+        <li>Advanced simulation and modeling software</li>
+        <li>Prototype development labs</li>
+        <li>Materials testing facilities</li>
+        <li>Environmental testing chambers</li>
+      </ul>
+    </div>
+    <div class="column">
+      <div class="column-title">
+        <h2>INTELLECTUAL PROPERTY</h2>
+      </div>
+      <p>We have a strong track record of innovation, with numerous:</p>
+      <ul>
+        <li>Patents filed and granted</li>
+        <li>Research papers published in reputed journals</li>
+        <li>Industry recognition and awards</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
