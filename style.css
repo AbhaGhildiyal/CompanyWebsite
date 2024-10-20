@@ -164,11 +164,11 @@ aside p {
 aside::before {
   content: "";
   position: absolute;
-  top: 217px;
-  left: 4.2%;
+  top: 190px;
+  left: 5.2%;
   transform: translateX(-50%);
   width: 1px;
-  height: 100%;
+  height: 180%;
   background-color: var(--clr-neutral-100);
 }
 .slogan button {
@@ -244,11 +244,11 @@ div.custom-aside {
 .custom-aside::before {
   content: "";
   position: absolute;
-  top: 49rem;
-  left: 4.2%;
+  top: 40rem;
+  left: 5.2%;
   transform: translateX(-50%);
   width: 1px;
-  height: 84%;
+  height: 100%;
   background-color: var(--clr-neutral-100);
 }
 .container2 {
@@ -291,11 +291,11 @@ div.custom-aside {
 .business-segments p::before {
   content: "";
   position: absolute;
-  top: 86rem;
-  left: 4.2%;
+  top: 80rem;
+  left: 5.2%;
   transform: translateX(-50%);
   width: 1px;
-  height: 149.5%;
+  height: 177.5%;
   background-color: var(--clr-secondary-400);
 }
 /* SERVICES SECTION */
