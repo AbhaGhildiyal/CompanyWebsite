@@ -413,3 +413,12 @@ footer{
   height: auto; 
 }
 
+.social{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.social img{
+  height: 30px;
+}
