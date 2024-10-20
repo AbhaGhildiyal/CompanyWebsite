@@ -62,6 +62,7 @@ body {
   background-size: cover;
   height: clamp(90vh, 650px, 100vh);
   clip-path: polygon(0% 0%, 100% 0, 100% 86%, 95% 100%, 0% 100%);
+  padding-right: 50px;
 }
 
 .upper-navbar {
@@ -79,7 +80,7 @@ body {
   height: 100px;
 }
 .contact-info {
-  display: grid;
+  display: flex;
   grid-template-columns: 8rem 7rem;
   align-items: center;
   height: 49px;
