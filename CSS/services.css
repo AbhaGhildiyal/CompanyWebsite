@@ -62,7 +62,6 @@ h6 {
     padding: 3rem 0rem;
     text-align: center;
 }
-
 #feature {
     display: flex;
     align-items: center;
@@ -78,37 +77,50 @@ h6 {
     border: 1px solid #cce7d0;
     border-radius: 4px;
     margin: 15px 0;
+    transition: transform 0.3s ease-in-out; /* Add transition effect */
 }
 
 #feature .fe-box:hover {
     box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+    transform: scale(1.1); /* Zoom in on hover */
 }
 
 #feature .fe-box img {
     width: 100%;
     margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+#feature .fe-box:hover img {
+    transform: scale(1.1); 
 }
 
 #feature .fe-box h6 {
     display: inline-block;
+    width: fit-content;
     padding: 9px 8px 6px 8px;
-    line-height: 1;
+    line-height: 2;
     border-radius: 4px;
     color: #088178;
     background-color: #fddde4;
 }
+
 #feature .fe-box:nth-child(2) h6 {
     background-color: #cdebbc;
 }
+
 #feature .fe-box:nth-child(3) h6 {
     background-color: #d1e8f2;
 }
+
 #feature .fe-box:nth-child(4) h6 {
     background-color: #cdd4f8;
 }
+
 #feature .fe-box:nth-child(5) h6 {
     background-color: #f6dbf6;
 }
+
 #feature .fe-box:nth-child(6) h6 {
     background-color: #fff2e5;
 }
@@ -117,13 +129,16 @@ h6 {
 .product-section {
     padding: 50px 0;
     text-align: center;
+    background-color: #1C1D1E;
+    
 }
 
 .product-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
+    padding: 20px;
+    
 }
 
 .product-card {
@@ -134,10 +149,13 @@ h6 {
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    border: 3px solid #8FA1F2;
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.11); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    z-index: 1; 
 }
 
 .product-image {
@@ -148,23 +166,25 @@ h6 {
 
 .product-details {
     padding: 20px;
+    background: #1C1D1E;
 }
 
 .product-details h4 {
     font-size: 1.5em;
     margin-bottom: 10px;
+    color: white;
     font-family: "Poppins", sans-serif;
 }
 
 .product-description {
     font-size: 0.9em;
     margin-bottom: 15px;
-    color: #555;
+    color: white;
 }
 
 .button-buy {
-    background-color: #007bff;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
