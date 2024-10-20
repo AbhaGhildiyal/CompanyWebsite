@@ -2,8 +2,8 @@
 
 body {
   margin: 0;
-  background-color: darkcyan;
-  color: darkgreen;
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-accent-400);
   font-family: var(--ff-base);
   font-size: var(--fs-300);
   font-weight: var(--fw-regular);
@@ -107,7 +107,7 @@ form button {
 }
 
 form button:hover {
-  background-color: d;
+  background-color: var(--clr-accent-500);
 }
 
 @media (max-width: 768px) {

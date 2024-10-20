@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NexaSite</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/6afefce1fa.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NexaSite</title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
             href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Outfit:wght@300;400;700&family=Poppins:wght@100;300;400;600;700&display=swap"
             rel="stylesheet"
         />
@@ -31,19 +31,16 @@
             href="public/favicon-16x16.png"
         />
         <link rel="manifest" href="public/site.webmanifest" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
-</head>
-<body>
-  <!-- MDL Spinner Component with Single Color -->
-    <div class="demo-layout-transparent mdl-layout mdl-js-layout">
-        <header class="mdl-layout__header mdl-layout__header--transparent">
-          <div class="mdl-layout__header-row">
-            <!-- Menu -->
-            <span class="mdl-layout-title ">
-                <img
+    </head>
+    <body>
+         <!-- This div represents the custom cursor -->
+        <div class="custom-cursor"></div>
+        
+        <div class="hex-container">
+            <header>
+                <div class="upper-navbar">
+                    <a href="index.html">
+                        <img
                             src="pic/LogoLight1.svg"
                             alt="SE-Logo"
                             class="logo"
@@ -65,9 +62,9 @@
                                 >Product and Services</a
                             >
                         </li>
-                        <li><a href="#">Manufacturing Process</a></li>
-                        <li><a href="#">Research Development</a></li>
-                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="pages/manu.html">Manufacturing Process</a></li>
+                        <li><a href="pages/research.html">Research Development</a></li>
+                        <li><a href="pages/casestudies.html">Case Studies</a></li>
                         <li><a href="pages/news.html">News</a></li>
                     </ul>
                 </nav>
@@ -122,7 +119,7 @@
         <div class="container2">
             <section class="business-segments">
                 <div class="grid-items-container2">
-                    <p>003</p>
+                    <p>03</p>
                     <h2>ABOUT US</h2>
                     <h1>OUR BUSINESS</h1>
                     <button>READ MORE &nbsp; &nbsp;></button>
@@ -173,7 +170,11 @@
         </div>
         <footer>
             <div class="container3">
-                <img src="pic/LogoLight1.svg" alt="" />
+                <div class="brand-slogan">
+                    <img src="pic/LogoLight1.svg" alt="nexasite logo" />
+                    <p class="slogan-p1">Designed with Expertise</p>
+                    <p class="slogan-p2 ">Manufactured with Precision</p>
+                </div>
                 <div class="footerabout">
                     <ul>
                         <li><a href="#">About Us</a></li>
@@ -199,8 +200,6 @@
                 </p> 
             </div>   
         </footer>
-
-      </div>
-</body>
+        <script src="./script.js"></script>
+    </body>
 </html>
-
