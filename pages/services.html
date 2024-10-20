@@ -35,38 +35,22 @@
         <link rel="stylesheet" href="../style.css" />
     </head>
     <body>
-        <header>
-            <div class="upper-navbar">
-                <a href="../index.html">
-                    <img
-                        src="../pic/LogoLight1.svg"
-                        alt="SE-Logo"
-                        class="logo"
-                    />
-                </a>
-                <ul class="contact-info">
-                    <p class="phone-number">+91 98XXXXXXXX</p>
-                    <a href="contact.html">
-                        <button class="button-contact">CONTACT US</button>
-                    </a>
-                </ul>
-            </div>
-            <nav>
-                <ul>
-                    
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li>
-                        <a href="services.html">Product and Services</a>
-                    </li>
-                    <li><a href="#">Manufacturing Process</a></li>
-                    <li><a href="#">Research Development</a></li>
-                    <li><a href="#">Case Studies</a></li>
-                    <li><a href="#">News</a></li>
-                </ul>
-            </nav>
-        </header>
-
+        <script>
+            fetch('header.html')
+            .then(response => response.text())
+            .then(content => {
+                const header = document.createElement('div');
+                header.innerHTML = content;
+                document.body.prepend(header);
+            });
+            fetch('footer.html')
+            .then(response => response.text())
+            .then(content => {
+                const footer = document.createElement('div');
+                footer.innerHTML = content;
+                document.body.appendChild(footer);
+            });
+        </script>
         <!-- Services -->
         <section class="" style="background-color: #1C1D1E">
             <h1 class="serv" style="color: white;">Services</h1>
@@ -166,33 +150,6 @@
             </div>
         </section>
 
-        <!-- footer -->
-        <footer>
-            <div class="container3">
-                <div class="brand-slogan">
-                <a href="../index.html"><img src="../pic/LogoLight1.svg" alt="nexasite-logo" /></a>
-                <p class="slogan-p1">Designed with Expertise</p>
-                <p class="slogan-p2 ">Manufactured with Precision</p>
-                </div>
-                <div class="footerabout">
-                    <ul>
-                        <li><a href="./about.html">About Us</a></li>
-                        <li><a href="./services.html">Product and Services</a></li>
-                        <li><a href="#">Manufacturing Process</a></li>
-                        <li><a href="#">Research Development</a></li>
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">News</a></li>
-                    </ul>
-                </div>
-                <div class="address">
-                    <h2>+91 98XXXXXXXX</h2>
-                    <p>
-                        Hogsmede<br />Hogwards School of Witchcraft and
-                        Wizardry<br />London<br />1022017
-                    </p>
-                </div>
-            </div>
-        </footer>
         <script src="../script.js"></script>
     </body>
 </html>
