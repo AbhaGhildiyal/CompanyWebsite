@@ -20,9 +20,6 @@
     background: #282c2c;
     color: var(--clr-neutral-100);
   }
-  .container3 img{
-    margin-left: 10rem;
-  }
   .footerabout li{
     list-style: none;
     margin: 1rem;
