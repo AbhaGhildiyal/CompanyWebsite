@@ -57,30 +57,20 @@ body {
   width: 100%;
   display: grid;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, -0.3)),
-    url("/pic/Factory_Shed.jpg");
+    url("./pic/Factory_Shed.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: clamp(90vh, 650px, 100vh);
   clip-path: polygon(0% 0%, 100% 0, 100% 86%, 95% 100%, 0% 100%);
+  padding-right: 50px;
 }
 
-.upper-navbar {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  height: 80px;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-.upper-navbar a {
-  width: fit-content;
-}
 .logo {
   margin-left: 3rem;
   height: 100px;
 }
 .contact-info {
-  display: grid;
-  grid-template-columns: 8rem 7rem;
+  display: flex;
   align-items: center;
   height: 49px;
   gap: 20px;
