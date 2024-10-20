@@ -44,17 +44,20 @@ img {
   transform: translate(-50%, -50%);
   z-index: 1000;
 }
+.logo {
+  margin-left: 3rem;
+  height: 100px;
+}
 body {
   margin: 0;
-  background-color: var(--clr-accent-400);
-  color: var(--clr-neutral-100);
+  background-color: darkcyan;
+  color: darkgreen;
   font-family: var(--ff-base);
   font-size: var(--fs-300);
   font-weight: var(--fw-regular);
 }
-
 .hex-container {
-  width: 100%;
+  width: 95%;
   display: grid;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, -0.3)),
     url("/pic/Factory_Shed.jpg");
@@ -74,10 +77,7 @@ body {
 .upper-navbar a {
   width: fit-content;
 }
-.logo {
-  margin-left: 3rem;
-  height: 100px;
-}
+
 .contact-info {
   display: grid;
   grid-template-columns: 8rem 7rem;
@@ -116,27 +116,6 @@ nav li a {
   position: relative;
   text-decoration: none;
   color: inherit;
-  transition: color 0.3s ease;
-}
-
-nav li a::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background-color: var(--clr-secondary-400);
-  transition: width 0.3s ease, left 0.3s ease;
-}
-
-nav li a:hover {
-  color: var(--clr-secondary-400);
-}
-
-nav li a:hover::after {
-  width: 100%;
-  left: 0;
 }
 
 .heading-grid {
@@ -186,19 +165,20 @@ aside::before {
   color: var(--clr-neutral-100);
   font-weight: var(--fw-bold);
   text-align: left;
-  background-color: var(--clr-secondary-400);
+  background-color: mediumspringgreen;
   border: none;
   border-radius: 15px;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
 .slogan button:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.184);
+  box-shadow: 0 4px 6px rgba(27, 179, 16, 0.184);
+  background-color: rgb(5, 70, 45);
 }
 .slogan p {
   width: fit-content;
   font-weight: var(--fw-semi-bold);
-  background-color: rgba(126, 167, 242, 0.152);
+  background-color: rgba(9, 91, 16, 0.152);
 }
 /* ABOUT US SECTION */
 .about-us {
@@ -347,7 +327,7 @@ footer{
 .container3 {
   padding: 3rem 2rem;
   display: grid;
-  grid-template-columns: 1.5fr 1.2fr 1.2fr;
+  grid-template-columns: 1fr 1fr 1fr;
   background: #3e3e4b52;
 }
 .container3 img {
