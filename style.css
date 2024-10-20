@@ -272,8 +272,10 @@ div.custom-aside {
   margin-top: 2.8rem;
 }
 .grid-items-container2 button {
+  margin: 70px;
   padding: 10px;
-  text-align: left;
+  border-radius: 10px;
+  height: 50px;
   font-weight: bold;
   width: fit-content;
   color: var(--clr-secondary-400);
