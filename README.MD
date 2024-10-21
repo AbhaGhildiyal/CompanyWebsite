@@ -19,6 +19,27 @@ Welcome to **NexaSite** 😎 - where creativity meets code! This project is a pl
 
 <img src="https://socialify.git.ci/Artemiskgg1/NexaSite/image?description=1&descriptionEditable=It%27s%20a%20canvas%20for%20your%20digital%20imagination!%E2%9C%A8&forks=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark" alt="NexaSite" />
 
+<table align="center">
+    <thead align="center">
+        <tr border: 1px;>
+            <td><b>🌟 Stars</b></td>
+            <td><b>🍴 Forks</b></td>
+            <td><b>🐛 Issues</b></td>
+            <td><b>🔔 Open PRs</b></td>
+            <td><b>🔕 Close PRs</b></td>
+        </tr>
+     </thead>
+    <tbody>
+         <tr>
+            <td><img alt="Stars" src="https://img.shields.io/github/stars/Artemiskgg1/NexaSite?style=flat&logo=github"/></td>
+             <td><img alt="Forks" src="https://img.shields.io/github/forks/Artemiskgg1/NexaSite?style=flat&logo=github"/></td>
+            <td><img alt="Issues" src="https://img.shields.io/github/issues/Artemiskgg1/NexaSite?style=flat&logo=github"/></td>
+            <td><img alt="Open Pull Requests" src="https://img.shields.io/github/issues-pr/Artemiskgg1/NexaSite?style=flat&logo=github"/></td>
+           <td><img alt="Close Pull Requests" src="https://img.shields.io/github/issues-pr-closed/Artemiskgg1/NexaSite?style=flat&color=critical&logo=github"/></td>
+        </tr>
+    </tbody>
+</table>
+
 ## 🌟 Features
 - 🎨 **Creative and Modern UI Designs**: Dive into a visually appealing interface that inspires creativity.
 - 💡 **Experimental Layouts and Styles**: Explore unique layouts that challenge traditional web design norms.
