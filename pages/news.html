@@ -1,80 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubham Engineers - News</title>
+    <link rel="stylesheet" href="../CSS/variables.css" />
+    <link rel="stylesheet" href="../CSS/news.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Outfit:wght@300;400;700&family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/public/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shubham Engineers - News</title>
-  <link rel="stylesheet" href="../CSS/variables.css">
-  <link rel="stylesheet" href="../CSS/news.css">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Outfit:wght@300;400;700&family=Poppins:wght@100;300;400;600;700&display=swap"
-    rel="stylesheet">
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
-  <link rel="manifest" href="/public/site.webmanifest">
+  <body class="font-Poppins ">
+    <script>
+      // Fetch and insert header content
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((content) => {
+          const header = document.createElement("div");
+          header.innerHTML = content;
+          document.body.prepend(header);
+        });
 
-</head>
+      // Fetch and insert footer content
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((content) => {
+          const footer = document.createElement("div");
+          footer.innerHTML = content;
+          document.body.appendChild(footer);
+        });
+    </script>
 
-<body>
-  <script>
-    // Fetch and insert header content
-    fetch('header.html')
-      .then(response => response.text())
-      .then(content => {
-        const header = document.createElement('div');
-        header.innerHTML = content;
-        document.body.prepend(header);
-      });
+    <main class="container mx-auto my-10 p-6 shadow-lg rounded-lg">
+      <h1 class="text-3xl font-bold text-center mb-6">
+        LATEST NEWS
+      </h1>
 
-    // Fetch and insert footer content
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(content => {
-        const footer = document.createElement('div');
-        footer.innerHTML = content;
-        document.body.appendChild(footer);
-      });
-  </script>
+      <div class="space-y-6">
+        <div
+          class="news-item p-4 border border-gray-300 rounded-md shadow-md hover:shadow-lg transition duration-300 ease-in-out bg-gray-100"
+        >
+          <div class="news-title mb-2">
+            <h2 class="text-xl font-semibold text-gray-800">
+              New Project Milestone Achieved
+            </h2>
+          </div>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+            reprehenderit! Reiciendis at sapiente consequatur ad fuga autem
+            totam blanditiis ea, numquam eius porro quas laboriosam molestiae
+            dolores dolorum earum hic.
+          </p>
+        </div>
 
-  <h1 class="main-heading">LATEST NEWS</h1>
+        <div
+          class="news-item p-4 border border-gray-300 rounded-md shadow-md hover:shadow-lg transition duration-300 ease-in-out bg-gray-100"
+        >
+          <div class="news-title mb-2">
+            <h2 class="text-xl font-semibold text-gray-800">
+              Expanding Infrastructure
+            </h2>
+          </div>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            non quia sint dolorem necessitatibus cum quas temporibus earum,
+            accusantium saepe explicabo maiores, natus officiis porro molestias,
+            tenetur veniam. Dolorum, earum!
+          </p>
+        </div>
 
-  <div class="news-section">
-    <div class="news-item">
-      <div class="news-title">
-        <h2>New Project Milestone Achieved</h2>
+        <div
+          class="news-item p-4 border border-gray-300 rounded-md shadow-md hover:shadow-lg transition duration-300 ease-in-out bg-gray-100"
+        >
+          <div class="news-title mb-2">
+            <h2 class="text-xl font-semibold text-gray-800">
+              Innovation in Engineering
+            </h2>
+          </div>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
+            quasi corrupti cumque libero. Sunt, ipsum corporis. Facilis,
+            assumenda! Nam dolores recusandae necessitatibus beatae, vel at
+            minima quos reiciendis mollitia rerum?
+          </p>
+        </div>
+
+        <div
+          class="news-item p-4 border border-gray-300 rounded-md shadow-md hover:shadow-lg transition duration-300 ease-in-out bg-gray-100"
+        >
+          <div class="news-title mb-2">
+            <h2 class="text-xl font-semibold text-gray-800">Upcoming Events</h2>
+          </div>
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+            deserunt quos ea, dolorem tempora ipsam quidem! Ratione adipisci
+            voluptatum reiciendis, laudantium nihil sunt distinctio cum aut
+            excepturi totam quas corporis?
+          </p>
+        </div>
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, reprehenderit! Reiciendis at sapiente consequatur ad fuga autem totam blanditiis ea, numquam eius porro quas laboriosam molestiae dolores dolorum earum hic.</p>
-    </div>
+    </main>
 
-    <div class="news-item">
-      <div class="news-title">
-        <h2>Expanding Infrastructure</h2>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita non quia sint dolorem necessitatibus cum quas temporibus earum, accusantium saepe explicabo maiores, natus officiis porro molestias, tenetur veniam. Dolorum, earum!</p>
-    </div>
-
-    <div class="news-item">
-      <div class="news-title">
-        <h2>Innovation in Engineering</h2>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus quasi corrupti cumque libero. Sunt, ipsum corporis. Facilis, assumenda! Nam dolores recusandae necessitatibus beatae, vel at minima quos reiciendis mollitia rerum?</p>
-    </div>
-
-    <div class="news-item">
-      <div class="news-title">
-        <h2>Upcoming Events</h2>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed deserunt quos ea, dolorem tempora ipsam quidem! Ratione adipisci voluptatum reiciendis, laudantium nihil sunt distinctio cum aut excepturi totam quas corporis?</p>
-    </div>
-  </div>
-
-  <script src="../script.js"></script>
-</body>
-
+    <script src="../script.js"></script>
+  </body>
 </html>
