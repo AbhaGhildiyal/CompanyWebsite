@@ -1,20 +1,5 @@
 <h1 align="center">✨ NexaSite</h1>
 
-<p align="center">
-    <a href="https://github.com/Artemiskgg1/NexaSite/actions">
-        <img src="https://img.shields.io/github/actions/workflow/status/Artemiskgg1/NexaSite/CI.yml?branch=main&label=Build%20Status&style=for-the-badge" alt="Build Status" />
-    </a>
-    <a href="https://github.com/Artemiskgg1/NexaSite/blob/main/LICENSE">
-        <img src="https://img.shields.io/badge/License-MIT-brightgreen?style=for-the-badge" alt="License" />
-    </a>
-    <a href="https://github.com/Artemiskgg1/NexaSite/stargazers">
-        <img src="https://img.shields.io/github/stars/Artemiskgg1/NexaSite?style=social" alt="Stars" />
-    </a>
-    <a href="https://github.com/Artemiskgg1/NexaSite/issues">
-        <img src="https://img.shields.io/github/issues/Artemiskgg1/NexaSite?style=for-the-badge" alt="Issues" />
-    </a>
-</p>
-
 Welcome to **NexaSite** 😎 - where creativity meets code! This project is a playground for innovative web design, built with HTML and CSS, and open to JavaScript enhancements. It's more than just a website; it's a canvas for your digital imagination!
 
 <img src="https://socialify.git.ci/Artemiskgg1/NexaSite/image?description=1&descriptionEditable=It%27s%20a%20canvas%20for%20your%20digital%20imagination!%E2%9C%A8&forks=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Dark" alt="NexaSite" />
