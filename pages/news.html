@@ -13,7 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Outfit:wght@300;400;700&family=Poppins:wght@100;300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_up" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_up"
+    />
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
@@ -39,7 +42,7 @@
     />
   </head>
 
-  <body class="font-Poppins ">
+  <body class="font-Poppins">
     <script>
       // Fetch and insert header content
       fetch("header.html")
@@ -61,81 +64,82 @@
     </script>
 
     <main class="container mx-auto my-10 p-6 shadow-lg rounded-lg">
-      <h1 class="text-3xl font-bold text-center mb-6">
-        LATEST NEWS
-      </h1>
+      <h1 class="text-3xl font-bold text-center mb-6">LATEST NEWS</h1>
 
-      <div class="space-y-6">
-        <div
-          class="news-item p-4 border border-gray-300 rounded-md shadow-md hover:shadow-lg transition duration-300 ease-in-out bg-gray-100"
-        >
-          <div class="news-title mb-2">
-            <h2 class="text-xl font-semibold text-gray-800">
-              New Project Milestone Achieved
-            </h2>
-          </div>
-          <p class="text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-            reprehenderit! Reiciendis at sapiente consequatur ad fuga autem
-            totam blanditiis ea, numquam eius porro quas laboriosam molestiae
-            dolores dolorum earum hic.
-          </p>
-        </div>
-
-        <div
-          class="news-item p-4 border border-gray-300 rounded-md shadow-md hover:shadow-lg transition duration-300 ease-in-out bg-gray-100"
-        >
-          <div class="news-title mb-2">
-            <h2 class="text-xl font-semibold text-gray-800">
-              Expanding Infrastructure
-            </h2>
-          </div>
-          <p class="text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-            non quia sint dolorem necessitatibus cum quas temporibus earum,
-            accusantium saepe explicabo maiores, natus officiis porro molestias,
-            tenetur veniam. Dolorum, earum!
-          </p>
-        </div>
-
-        <div
-          class="news-item p-4 border border-gray-300 rounded-md shadow-md hover:shadow-lg transition duration-300 ease-in-out bg-gray-100"
-        >
-          <div class="news-title mb-2">
-            <h2 class="text-xl font-semibold text-gray-800">
-              Innovation in Engineering
-            </h2>
-          </div>
-          <p class="text-gray-600">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus
-            quasi corrupti cumque libero. Sunt, ipsum corporis. Facilis,
-            assumenda! Nam dolores recusandae necessitatibus beatae, vel at
-            minima quos reiciendis mollitia rerum?
-          </p>
-        </div>
-
-        <div
-          class="news-item p-4 border border-gray-300 rounded-md shadow-md hover:shadow-lg transition duration-300 ease-in-out bg-gray-100"
-        >
-          <div class="news-title mb-2">
-            <h2 class="text-xl font-semibold text-gray-800">Upcoming Events</h2>
-          </div>
-          <p class="text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-            deserunt quos ea, dolorem tempora ipsam quidem! Ratione adipisci
-            voluptatum reiciendis, laudantium nihil sunt distinctio cum aut
-            excepturi totam quas corporis?
-          </p>
-        </div>
-      </div>
+      <div class="new-news-container"></div>
     </main>
 
     <!-- Scroll to Top Button -->
     <button id="backToTopBtn" title="Go to top">
       <span class="material-symbols-outlined">keyboard_arrow_up</span>
-      </button>
+    </button>
     <script src="script.js"></script>
 
     <script src="../script.js"></script>
+    <script>
+      const newsList = [
+        {
+          title:
+            "New Product Launch: Shubham Engineers introduces innovative tools",
+          desc: "Our latest tools are designed to revolutionize the industry with advanced technology and user-friendly design.",
+          link: "#",
+          img: "../pic/Artistic Boundary Railings 2.jpg",
+        },
+        {
+          title: "Expansion in Manufacturing Capabilities",
+          desc: "Shubham Engineers has expanded its manufacturing facilities to meet growing demand and enhance production quality.",
+          link: "#",
+          img: "../pic/Artistic Boundary Railings 2.jpg",
+        },
+        {
+          title: "Sustainability Initiatives at Shubham Engineers",
+          desc: "We are committed to reducing our environmental impact through various sustainability initiatives.",
+          link: "#",
+          img: "../pic/Artistic Boundary Railings 2.jpg",
+        },
+        {
+          title: "CEO's Vision for the Future",
+          desc: "Our CEO outlines the company's strategic goals for the next decade, focusing on growth and innovation.",
+          link: "#",
+          img: "../pic/Artistic Boundary Railings 2.jpg",
+        },
+        {
+          title: "Community Engagement and Support",
+          desc: "Shubham Engineers continues to support local communities through various CSR programs and initiatives.",
+          link: "#",
+          img: "../pic/Artistic Boundary Railings 2.jpg",
+        },
+        {
+          title: "Global Expansion Plans Revealed",
+          desc: "We are excited to announce our plans for global expansion, aiming to serve new markets and customers worldwide.",
+          link: "#",
+          img: "../pic/Artistic Boundary Railings 2.jpg",
+        },
+      ];
+
+      const newsContainer = document.querySelector(".new-news-container");
+
+      newsList.forEach((newsItem) => {
+        const card = document.createElement("div");
+        card.classList.add("new-card");
+
+        card.innerHTML = `
+      <div class="new-image">
+        <img src="${newsItem.img}" alt="News Image">
+      </div>
+      <div class="new-content">
+        <a href="${newsItem.link}" class="new-title">
+          <span class="new-title-text">${newsItem.title}</span>
+        </a>
+        <p class="new-desc">${newsItem.desc}</p>
+        <a class="new-action" href="${newsItem.link}">
+          Find out more <span aria-hidden="true"> → </span>
+        </a>
+      </div>
+    `;
+
+        newsContainer.appendChild(card);
+      });
+    </script>
   </body>
 </html>
