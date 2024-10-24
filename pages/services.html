@@ -13,6 +13,7 @@
             href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Outfit:wght@300;400;700&family=Poppins:wght@100;300;400;600;700&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_up" />
         <!-- Favicon -->
         <link
             rel="apple-touch-icon"
@@ -35,43 +36,57 @@
         <link rel="stylesheet" href="../style.css" />
     </head>
     <body>
-        <script>
-            fetch('header.html')
-            .then(response => response.text())
-            .then(content => {
-                const header = document.createElement('div');
-                header.innerHTML = content;
-                document.body.prepend(header);
-            });
-            fetch('footer.html')
-            .then(response => response.text())
-            .then(content => {
-                const footer = document.createElement('div');
-                footer.innerHTML = content;
-                document.body.appendChild(footer);
-            });
-        </script>
+        <header>
+            <div class="upper-navbar">
+                <a href="../index.html">
+                    <img
+                        src="../pic/LogoLight1.svg"
+                        alt="SE-Logo"
+                        class="logo"
+                    />
+                </a>
+                <ul class="contact-info">
+                    <p class="phone-number">+91 98XXXXXXXX</p>
+                    <a href="contact.html">
+                        <button class="button-contact">CONTACT US</button>
+                    </a>
+                </ul>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li>
+                        <a href="services.html">Product and Services</a>
+                    </li>
+                    <li><a href="#">Manufacturing Process</a></li>
+                    <li><a href="#">Research Development</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">News</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <!-- Services -->
-        <section class="" style="background-color: #1C1D1E">
-            <h1 class="serv" style="color: white;">Services</h1>
+        <section class="" style="background-color: white">
+            <h1 class="serv">Services</h1>
             <div id="feature" class="div-p1">
-                <div class="fe-box"  style=" width: 250px; border: 3px solid #8FA1F2; border-radius: 10px; background-color: #1C1D1E">
+                <div class="fe-box">
                     <img src="../pic/services Png/f1.png" alt="" />
                     <h6>Free Shiping</h6>
                 </div>
-                <div class="fe-box" style=" width: 250px; border: 3px solid #8FA1F2; border-radius: 10px; background-color: #1C1D1E">
+                <div class="fe-box">
                     <img src="../pic/services Png/f2.png" alt="" />
                     <h6>Online Order</h6>
                 </div>
-                <div class="fe-box" style=" width: 250px; border: 3px solid #8FA1F2; border-radius: 10px; background-color: #1C1D1E">
+                <div class="fe-box">
                     <img src="../pic/services Png/f3.png" alt="" />
                     <h6>Save Money</h6>
                 </div>
-                <div class="fe-box" style=" width: 250px; border: 3px solid #8FA1F2; border-radius: 10px; background-color: #1C1D1E">
+                <div class="fe-box">
                     <img src="../pic/services Png/f4.png" alt="" />
                     <h6>Promotions</h6>
                 </div>
-                <div class="fe-box" style=" width: 250px; border: 3px solid #8FA1F2; border-radius: 10px; background-color: #1C1D1E">
+                <div class="fe-box">
                     <img src="../pic/services Png/f5.png" alt="" />
                     <h6>Happy Sell</h6>
                 </div>
@@ -79,10 +94,10 @@
         </section>
 
         <!-- Product -->
-        <section class="product-section" style="background-color: #1C1D1E">
-            <h1 class="serv"  style="color: white">Our Products</h1>
+        <section class="product-section" style="background-color: white">
+            <h1 class="serv">Our Products</h1>
             <div class="product-container">
-                <div class="product-card" style="margin-right: 20px;">
+                <div class="product-card">
                     <img
                         src="../pic/Cement Elevator Wing Pulley.jpg"
                         alt="Product 1"
@@ -98,7 +113,7 @@
                     </div>
                 </div>
 
-                <div class="product-card" style="margin-right: 20px;">
+                <div class="product-card">
                     <img
                         src="../pic/Cement Elevator Wing Pulley.jpg"
                         alt="Product 2"
@@ -114,7 +129,7 @@
                     </div>
                 </div>
 
-                <div class="product-card" style="margin-right: 20px;">
+                <div class="product-card">
                     <img
                         src="../pic/Cement Elevator Wing Pulley.jpg"
                         alt="Product 3"
@@ -129,26 +144,37 @@
                         <button class="button-buy">Buy Now</button>
                     </div>
                 </div>
-                <div class="product-card" style="margin-right: 20px;">
-                    <img
-                        src="../pic/Cement Elevator Wing Pulley.jpg"
-                        alt="Product 3"
-                        class="product-image"
-                    />
-                    <div class="product-details">
-                        <h4>Product Name 4</h4>
-                        <p class="product-description">
-                            This is a brief description of Product 3. It
-                            highlights key features and benefits.
-                        </p>
-                        <button class="button-buy">Buy Now</button>
-                    </div>
-                </div>
-                
-                
-                
             </div>
         </section>
+
+<!-- footer -->
+<footer>
+    <div class="container3">
+        <img src="../pic/LogoLight1.svg" alt="" />
+        <div class="footerabout">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Product and Services</a></li>
+                <li><a href="#">Manufacturing Process</a></li>
+                <li><a href="#">Research Development</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
+        <div class="address">
+            <h2>+91 98XXXXXXXX</h2>
+            <p>
+                Hogsmede<br />Hogwarts School of Witchcraft and Wizardry<br />London<br />1022017
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button id="backToTopBtn" title="Go to top">
+    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+</button>
+<script src="script.js"></script>
 
         <script src="../script.js"></script>
     </body>
