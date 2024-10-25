@@ -29,7 +29,7 @@ img {
 *::after,
 *::before {
   box-sizing: border-box;
-  cursor: none !important; 
+  cursor: none !important;
 }
 
 .custom-cursor {
@@ -40,7 +40,8 @@ img {
   border-radius: 50%;
   border: 1px solid white;
   pointer-events: none;
-  transition: width 0.1s ease, height 0.1s ease, border-radius 0.1s ease, transform 0.1s ease, background-color 0.1s ease, border 0.1s ease;
+  transition: width 0.1s ease, height 0.1s ease, border-radius 0.1s ease,
+    transform 0.1s ease, background-color 0.1s ease, border 0.1s ease;
   transform: translate(-50%, -50%);
   z-index: 1000;
 }
@@ -53,16 +54,34 @@ body {
   font-weight: var(--fw-regular);
 }
 
+.header-section {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blurry background for glass effect */
+  position: fixed; /* Keep it fixed at the top */
+  width: 100%; /* Full width */
+  z-index: 100; /* Make sure it appears above other content */
+  padding: 5px 20px; /* Reduced padding to decrease height */
+  height: 60px; /* Set a specific height for the header */
+  display: flex; /* Use flexbox to arrange content */
+  align-items: center; /* Center items vertically */
+}
+
 .hex-container {
   width: 100%;
-  display: grid;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, -0.3)),
-    url("./pic/Factory_Shed.jpg");
+  display: flex; /* Changed to flex to align items */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, -0.3));
   background-repeat: no-repeat;
   background-size: cover;
   height: clamp(90vh, 650px, 100vh);
   clip-path: polygon(0% 0%, 100% 0, 100% 86%, 95% 100%, 0% 100%);
   padding-right: 50px;
+}
+
+.logo {
+  max-width: 80px; /* Limit logo size */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .logo {
@@ -110,7 +129,7 @@ nav li a {
 }
 
 nav li a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: -5px;
@@ -192,14 +211,12 @@ aside::before {
 }
 /* ABOUT US SECTION */
 
-
- .about-us {
+.about-us {
   display: grid;
   grid-gap: 1.5rem;
   grid-template-columns: 0.3fr 2fr 1fr 1fr;
   margin: 4rem 10rem 0px 3.5rem;
 }
-
 
 .about-img-container {
   /* height: 320px; */
@@ -266,7 +283,7 @@ div.custom-aside {
   margin-left: 3.4rem;
   margin-top: 3rem;
   font-weight: var(--fw-semi-bold) S;
-  }
+}
 .business-segments p::before {
   content: "";
   position: absolute;
@@ -276,7 +293,7 @@ div.custom-aside {
   width: 1px;
   height: 177.5%;
   background-color: var(--clr-secondary-400);
-} 
+}
 /* SERVICES SECTION */
 .services {
   width: 80%;
@@ -304,13 +321,13 @@ div.custom-aside {
   display: block;
 }
 
-.services-col:hover{
+.services-col:hover {
   transform: scale(1.05);
 }
 
 /* Footer area */
-footer{
-   padding: 0 2rem 0 1.5rem;
+footer {
+  padding: 0 2rem 0 1.5rem;
 }
 
 .container3 {
@@ -323,22 +340,23 @@ footer{
   margin-bottom: 1.2rem;
 }
 
-.brand-slogan{
+.brand-slogan {
   margin: 0 auto;
 }
 
-.slogan-p1, .slogan-p2{
+.slogan-p1,
+.slogan-p2 {
   margin-top: 0;
-  margin-bottom: .1rem;
+  margin-bottom: 0.1rem;
 }
 
-.slogan-p1{
+.slogan-p1 {
   font-size: 1.1rem;
 }
 
-.slogan-p2{
+.slogan-p2 {
   font-size: 1.4rem;
-  color: #4967E9;
+  color: #4967e9;
   font-weight: 600;
 }
 
@@ -354,7 +372,7 @@ footer{
 }
 
 .footerabout li a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: -5px;
@@ -373,10 +391,10 @@ footer{
   left: 0;
 }
 
-.copyright p{
-  text-align: center; 
-  background: #3e3e4b52; 
-  margin: 0; 
+.copyright p {
+  text-align: center;
+  background: #3e3e4b52;
+  margin: 0;
   padding-bottom: 15px;
 }
 
@@ -385,18 +403,18 @@ footer{
 }
 
 .service-img {
-  display: block; 
+  display: block;
   width: 100%; /* Makes the image responsive */
-  height: auto; 
+  height: auto;
 }
 
-.social{
+.social {
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
 }
-.social img{
+.social img {
   height: 30px;
 }
 
@@ -423,7 +441,23 @@ footer{
 }
 /* Button hover effect */
 
-
 #backToTopBtn:hover span {
-	transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+.factory-shed-container {
+  width: 100%; /* Full width */
+  height: 60vh; /* Set height to 60% of the viewport */
+  overflow: hidden; /* Hide any overflow */
+  position: relative; /* Position relative for absolute children */
+}
+
+.factory-shed {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  min-height: 100%; /* Ensure it covers the container */
+  max-height: 120%; /* Adjust to allow some increase in height */
+  object-fit: cover; /* Cover the area, maintaining aspect ratio */
+  position: absolute; /* Position it absolutely within the container */
+  top: -10%; /* Move it up slightly to show more of the bottom */
+  left: 0; /* Align it to the left */
 }
