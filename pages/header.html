@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
     <link rel="manifest" href="/public/site.webmanifest">
     <style>
-        :root{
+        :root {
             --clr-neutral-100: hsla(0, 0%, 100%, 1);
             --clr-primary-800: hsla(229, 47%, 17%, 1);
             --clr-primary-700: hsla(229, 43%, 20%, 1);
@@ -24,7 +24,7 @@
             --clr-accent-400: rgb(28, 29, 30);
             --clr-secondary-400: hsla(229, 78%, 60%, 1);
             
-            --ff-heading:  'Chakra Petch', sans-serif;
+            --ff-heading: 'Chakra Petch', sans-serif;
             --ff-base: 'Outfit', sans-serif;
 
             --fw-regular: 300;
@@ -38,93 +38,139 @@
             --fs-600: 1.75rem;
             --fs-700: clamp(5rem, 10vw - 0.5rem, 3.25rem);
         }
-    img{
-        max-width: 100%;
-        display: block;
-    }
-    *{
-        box-sizing: border-box;
-    }
-    header{
-        display: grid;
-        width: 100%;
-        margin: 0;
-        background-color: var(--clr-accent-400);
-        background: url('/pic/about_us.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-family: var(--ff-base);
-        font-size: var(--fs-300) ;
-        font-weight: var(--fw-regular);
-    }
-    .upper-navbar{
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        height: 80px;
-    }
-    .upper-navbar a{
-        width: fit-content;
-    }
-    .logo{
-        margin-left: 3rem;
-        height: 100px;
-    }
-    .contact-info{
-        display: grid;
-        grid-template-columns: 8rem 7rem;
-        align-items: center;
-        height: 49px;
-        color: var(--clr-neutral-100);
-        gap: 20px;
         
-    }
-    .button-contact{
-        padding: 10px;
-        border: 2px solid rgba(255, 243, 243, 0.586);
-        border-radius: 5px;
-        background-color: transparent;
-        color: var(--clr-neutral-100);
-        font-weight: var(--fw-bold);
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-         
-    }
-    .button-contact:hover{
-        background-color: var(--clr-secondary-400);
-    }
-    nav{
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-top:.5%;
-        height: fit-content;
-        color: var(--clr-neutral-100);
-    }
-    nav li{
-        list-style: none;
-        display: inline-block;
-        padding: 8px 12px;
-        position: relative;
-    }
-    nav li a{
-        text-decoration: none;
-        color: inherit;
-    }
+        img {
+            max-width: 100%;
+            display: block;
+        }
 
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            display: grid;
+            width: 100%;
+            margin: 0;
+            background-color: var(--clr-accent-400);
+            background: url('/pic/about_us.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: var(--ff-base);
+            font-size: var(--fs-300);
+            font-weight: var(--fw-regular);
+        }
+
+        .upper-navbar {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            height: 80px;
+        }
+
+        .upper-navbar a {
+            width: fit-content;
+        }
+
+        .logo {
+            margin-left: 3rem;
+            height: 100px;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: 8rem 7rem;
+            align-items: center;
+            height: 49px;
+            color: var(--clr-neutral-100);
+            gap: 20px;
+        }
+
+        .button-contact {
+            padding: 10px;
+            border: 2px solid rgba(255, 243, 243, 0.586);
+            border-radius: 5px;
+            background-color: transparent;
+            color: var(--clr-neutral-100);
+            font-weight: var(--fw-bold);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-contact:hover {
+            background-color: var(--clr-secondary-400);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 0.5%;
+            height: fit-content;
+            color: var(--clr-neutral-100);
+        }
+
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .nav-links li {
+            list-style: none;
+            padding: 8px 12px;
+            border-bottom: 1px solid var(--clr-neutral-100);
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            margin-right: 20px;
+            gap: 4px;
+        }
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: var(--clr-neutral-100);
+            transition: 0.3s;
+        }
+
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+                flex-direction: row;
+            }
+            .hamburger {
+                display: none;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="upper-navbar">
-            <a href="/index.html"><img src="../pic/LogoDark2.svg" alt="SE-Logo" class="logo "></a>
-            <ul class="contact-info ">
+            <a href="/index.html"><img src="../pic/LogoDark2.svg" alt="SE-Logo" class="logo"></a>
+            <ul class="contact-info">
                 <p class="phone-number">+91 98XXXXXXXX</p>
                 <a href="/pages/contact.html"><button class="button-contact">CONTACT US</button></a>
             </ul>
         </div>
         <nav>
-            <ul >
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./about.html">About Us</a></li>
                 <li><a href="./services.html">Product and Services</a></li>
@@ -135,6 +181,12 @@
             </ul>
         </nav>
     </header>
-    <script src="../script.js"></script>
+    
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+    </script>
 </body>
 </html>
