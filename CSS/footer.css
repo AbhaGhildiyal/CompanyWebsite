@@ -231,3 +231,70 @@ ul {
   font-size: 14px;
   color: #878787;
 }
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-container, .footer-details-contacts, .footer-details-body {
+      flex-direction: column;
+      align-items: center;
+  }
+  .footer-widget ul li {
+      width: 100%;
+      text-align: center;
+  }
+  .footer-widget-heading h3 {
+      text-align: center;
+  }
+  .single-cta {
+      max-width: 100%;
+      text-align: center;
+  }
+}
+
+/* Elevated styling */
+.footer-social-icon a:hover, .footer-widget ul li a:hover {
+  color: #14dcff;
+  transition: color 0.3s ease;
+}
+.subscribe-form input, .subscribe-form button {
+  border-radius: 5px;
+}
+.subscribe-form button:hover {
+  background: #13b3ff;
+}
+/* Centering the copyright text */
+.copyright-area .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Aligning Call Us, Find Us, and Mail Us horizontally */
+.footer-details-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem; /* Adjust gap as needed */
+}
+
+/* Follow Us section styling */
+.footer-social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-social .footer-social-icon {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-icon a:hover {
+  transform: scale(1.1);
+}
