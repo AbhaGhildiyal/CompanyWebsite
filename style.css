@@ -70,12 +70,16 @@ body {
 .logo {
   margin-left: 3rem;
   height: 100px;
+  height: 80px;
+  width: auto;
+  margin-top: -10px;
 }
 .contact-info {
   display: flex;
   align-items: center;
   height: 49px;
   gap: 20px;
+  margin-top: -5px;
 }
 .button-contact {
   padding: 0.7rem;
@@ -95,7 +99,7 @@ nav {
   position: relative;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 0.5%;
+  margin-top: 50px;
   height: fit-content;
 }
 nav li {
@@ -138,6 +142,7 @@ nav li a:hover::after {
   /* margin-left: 13rem; */
   /* justify-content: end; */
   /* width: min-content; */
+  padding-top: 90px;
 }
 aside {
   display: flex;
