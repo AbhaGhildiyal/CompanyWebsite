@@ -115,3 +115,38 @@ function updateScrollIndicator() {
   const scrollPercentage = (scrollTop / scrollHeight) * 100;
   document.getElementById("scrollIndicator").style.width = scrollPercentage + "%";
 }
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+
+function showSlide(index) {
+  // Hide all slides
+  slides.forEach(slide => slide.classList.remove('active'));
+
+  // Set the new active slide
+  slides[index].classList.add('active');
+}
+
+function moveSlide(direction) {
+  // Update currentSlide based on direction
+  currentSlide += direction;
+
+  // Loop around if at the start or end
+  if (currentSlide < 0) {
+    currentSlide = slides.length - 1;
+  } else if (currentSlide >= slides.length) {
+    currentSlide = 0;
+  }
+
+  // Display the new slide
+  showSlide(currentSlide);
+}
+
+// Initialize first slide
+showSlide(currentSlide);
+
+// Event listeners for navigation arrows
+document.querySelector('.left-arrow').addEventListener('click', () => moveSlide(-1));
+document.querySelector('.right-arrow').addEventListener('click', () => moveSlide(1));
+
+
