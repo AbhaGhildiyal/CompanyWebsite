@@ -103,3 +103,15 @@ function scrollToTop() {
   };
   requestAnimationFrame(scrollAnimation);
 }
+
+
+window.onscroll = function() {
+  updateScrollIndicator();
+};
+
+function updateScrollIndicator() {
+  const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrollPercentage = (scrollTop / scrollHeight) * 100;
+  document.getElementById("scrollIndicator").style.width = scrollPercentage + "%";
+}
