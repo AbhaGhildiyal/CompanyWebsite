@@ -497,3 +497,14 @@ footer{
 #backToTopBtn:hover span {
 	transform: translateY(-4px);
 }
+
+#scrollIndicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10px; /* Adjust thickness */
+  background-color: var(--clr-secondary-400);
+  width: 0%;
+  z-index: 1000;
+}
+
