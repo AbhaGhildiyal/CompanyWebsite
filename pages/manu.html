@@ -7,6 +7,7 @@
   <title>Manufacturing Process - Shubham Engineers</title>
   <link rel="stylesheet" href="../CSS/variables.css">
   <link rel="stylesheet" href="../CSS/about.css">
+  <link rel="stylesheet" href="../CSS/manu.css">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,15 +31,6 @@
         const header = document.createElement('div');
         header.innerHTML = content;
         document.body.prepend(header);
-      });
-
-    // Fetch and insert footer content
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(content => {
-        const footer = document.createElement('div');
-        footer.innerHTML = content;
-        document.body.appendChild(footer);
       });
   </script>
   <h1 class="main-heading">MANUFACTURING PROCESS</h1>
