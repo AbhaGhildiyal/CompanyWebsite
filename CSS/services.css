@@ -3,6 +3,7 @@
 html {
   margin: 0;
   padding: 0;
+  cursor:auto;
   width: 100%;
 }
 
@@ -63,65 +64,44 @@ h6 {
   text-align: center;
 }
 
-#feature {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.feature{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    cursor: pointer;
 }
 
-#feature .fe-box:hover h6 {
-  background-color: #ff6363; /* Bright red background */
-  color: rgb(10, 6, 245); /* White text */
+.feature-card{
+  width: 300px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  border: 2px solid black;
 }
 
-#feature .fe-box {
-  width: 180px;
-  text-align: center;
-  padding: 25px 15px;
-  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-  border: 1px solid #12ad29;
-  border-radius: 4px;
-  margin: 15px 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease,
-    background-color 0.3s ease;
+.feature-card:hover{
+  filter: brightness(1.1);
+  transform: scale(1.02);
+  transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-#feature .fe-box:hover {
-  transform: rotate(5deg) scale(1.05); /* Slight rotation and scaling */
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1); /* Larger shadow on hover */
-  background-color: #91b4cb; /* Light background change */
-}
-
-#feature .fe-box img {
+.feature-image{
   width: 100%;
-  margin-bottom: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-#feature .fe-box h6 {
-  transition: background-color 0.3s ease, color 0.3s ease;
-  display: inline-block;
-  padding: 9px 8px 6px 8px;
-  line-height: 1;
-  border-radius: 4px;
-  color: #10d5c8;
-  background-color: #fddde4;
+.feature-img{
+  padding: 10px;
 }
-#feature .fe-box:nth-child(2) h6 {
-  background-color: #cdebbc;
+
+.feature-details{
+  text-align: center;
 }
-#feature .fe-box:nth-child(3) h6 {
-  background-color: #d1e8f2;
-}
-#feature .fe-box:nth-child(4) h6 {
-  background-color: #cdd4f8;
-}
-#feature .fe-box:nth-child(5) h6 {
-  background-color: #f6dbf6;
-}
-#feature .fe-box:nth-child(6) h6 {
-  background-color: #fff2e5;
-}
+
+
+
 
 /* Product Section Styles */
 .product-section {

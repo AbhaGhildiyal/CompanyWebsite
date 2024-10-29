@@ -29,7 +29,6 @@ img {
 *::after,
 *::before {
   box-sizing: border-box;
-  cursor: none !important; 
 }
 
 .custom-cursor {
