@@ -50,6 +50,7 @@ body {
   font-family: var(--ff-base);
   font-size: var(--fs-300);
   font-weight: var(--fw-regular);
+  cursor: none !important;
 }
 
 .hex-container {
