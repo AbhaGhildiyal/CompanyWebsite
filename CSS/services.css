@@ -193,3 +193,300 @@ h6 {
 .button-buy:hover {
   background-color: #0056b3;
 }
+
+
+/* Footer css */
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.footer-section {
+  background: #151414;
+  position: relative;
+  align-items: center;
+}
+
+.footer-container {
+  width: 90%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.footer-cta {
+  border-top: 1px solid #373636;
+}
+
+.footer-details-body {
+  margin: 25px 0px 25px 0px;
+}
+
+.footer-details-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 10rem;
+}
+
+.single-cta {
+  align-items: center;
+  display: flex;
+  gap: 2px;
+  max-width: 255px;
+  text-align: justify;
+}
+
+.single-cta i {
+  color: #144fff;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.footer-logo {
+  margin-bottom: 30px;
+}
+
+.footer-logo img {
+  max-width: 200px;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #7e7e7e;
+  line-height: 28px;
+}
+
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+.facebook-bg {
+  background: #3B5998;
+}
+
+.twitter-bg {
+  background: #55ACEE;
+}
+
+.google-bg {
+  background: #DD4B39;
+}
+
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #1427ff;
+}
+
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.footer-widget ul li a:hover {
+  color: #1437ff;
+}
+
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #1466ff;
+  padding: 13px 20px;
+  border: 1px solid #14dcff;
+  top: 0;
+}
+
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+
+.copyright-area {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-left: 350px;
+}
+
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+
+.copyright-text p a {
+  color: #1814ff;
+}
+
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.footer-menu li:hover a {
+  color: #1476ff;
+}
+
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-container, .footer-details-contacts, .footer-details-body {
+      flex-direction: column;
+      align-items: center;
+  }
+  .footer-widget ul li {
+      width: 100%;
+      text-align: center;
+  }
+  .footer-widget-heading h3 {
+      text-align: center;
+  }
+  .single-cta {
+      max-width: 100%;
+      text-align: center;
+  }
+}
+
+/* Elevated styling */
+.footer-social-icon a:hover, .footer-widget ul li a:hover {
+  color: #14dcff;
+  transition: color 0.3s ease;
+}
+.subscribe-form input, .subscribe-form button {
+  border-radius: 5px;
+}
+.subscribe-form button:hover {
+  background: #13b3ff;
+}
+/* Centering the copyright text */
+.copyright-area .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Aligning Call Us, Find Us, and Mail Us horizontally */
+.footer-details-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem; /* Adjust gap as needed */
+}
+
+/* Follow Us section styling */
+.footer-social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-social .footer-social-icon {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-social-icon a {
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social-icon a:hover {
+  transform: scale(1.1);
+}
