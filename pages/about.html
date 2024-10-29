@@ -1,109 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shubham Engineers</title>
+    <link rel="stylesheet" href="../CSS/variables.css" />
+    <link rel="stylesheet" href="../CSS/about.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Outfit:wght@300;400;700&family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_up"
+    />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/public/site.webmanifest" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shubham Engineers</title>
-  <link rel="stylesheet" href="../CSS/variables.css">
-  <link rel="stylesheet" href="../CSS/about.css">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500;700&family=Outfit:wght@300;400;700&family=Poppins:wght@100;300;400;600;700&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_up" />
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
-  <link rel="manifest" href="/public/site.webmanifest">
+  <body>
+    <script>
+      // Fetch and insert header content
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((content) => {
+          const header = document.createElement("div");
+          header.innerHTML = content;
+          document.body.prepend(header);
+        });
 
-</head>
+      // Fetch and insert footer content
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((content) => {
+          const footer = document.createElement("div");
+          footer.innerHTML = content;
+          document.body.appendChild(footer);
+        });
+    </script>
 
-<body>
-  <script>
-    // Fetch and insert header content
-    fetch('header.html')
-      .then(response => response.text())
-      .then(content => {
-        const header = document.createElement('div');
-        header.innerHTML = content;
-        document.body.prepend(header);
-      });
-
-    // Fetch and insert footer content
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(content => {
-        const footer = document.createElement('div');
-        footer.innerHTML = content;
-        document.body.appendChild(footer);
-      });
-  </script>
-  <h1 class="main-heading">ABOUT US</h1>
-  <div class="paragraph">
-    <div class="column">
-      <div class="column-title">
-        <h2>INTRODUCTION</h2>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis at sapiente consequatur ad fuga autem totam
-        blanditiis ea, numquam eius porro quas laboriosam molestiae dolores dolorum earum hic, perferendis quo? Corrupti
-        culpa laborum aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia.</p>
-    </div>
-    <div class="column">
-      <div class="column-title">
-        <h2>TEAM</h2>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis at sapiente consequatur ad fuga autem totam
-        blanditiis ea, numquam eius porro quas laboriosam molestiae dolores dolorum earum hic, perferendis quo? Corrupti
-        culpa laborum aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia.</p>
-    </div>
-    <div class="column">
-      <div class="column-title">
-        <h2>STATE-OF-THE-ART INFRASTRUCTURE</h2>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis at sapiente consequatur ad fuga autem totam
-        blanditiis ea, numquam eius porro quas laboriosam molestiae dolores dolorum earum hic, perferendis quo? Corrupti
-        culpa laborum aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia.
-        <br>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt enim, officia doloribus corporis voluptatibus
-        ut tempora nulla labore. Soluta, nisi mollitia.
+    <div class="AboutUs">
+      <h1>What we do?</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ut
+        aliquid voluptates odit, eveniet, in possimus nobis, a neque dolor quod
+        veritatis fugit commodi inventore rerum asperiores illo? Odio dolor nemo
+        adipisci aut modi iste commodi qui vel nulla tempore, et provident nisi
+        id, maxime laudantium atque vero quaerat. Atque sunt, tenetur qui velit,
+        ut est sint quaerat possimus cumque reprehenderit eos ipsa hic illum
+        blanditiis modi placeat fugit tempora obcaecati, esse maxime veritatis!
+        Perspiciatis harum quaerat mollitia sunt. Neque nihil ea dolor nobis
+        molestiae at atque cupiditate voluptatum nemo debitis libero facilis
+        laboriosam quae, ipsam repudiandae exercitationem, rem quis!
       </p>
-    </div>
-    <div class="column">
-      <div class="column-title">
-        <h2>VISION AND MISSION</h2>
+      <div class="msv">
+        <!-- Mission, Vision, Values cards will be generated here -->
       </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis at sapiente consequatur ad fuga autem totam
-        blanditiis ea, numquam eius porro quas laboriosam molestiae dolores dolorum earum hic, perferendis quo? Corrupti
-        culpa
-      <ol>
-        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab deserunt eos similique nostrum explicabo!</li>
-        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab deserunt eos similique nostrum explicabo!</li>
-        <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab deserunt eos similique nostrum explicabo!</li>
-      </ol>
-      </p>
-    </div>
-    <div class="column">
-      <div class="column-title">
-        <h2>QUALITY POLICY</h2>
-      </div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis at sapiente consequatur ad fuga autem totam
-        blanditiis ea, numquam eius porro quas laboriosam molestiae dolores dolorum earum hic, perferendis quo? Corrupti
-        culpa laborum aliquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quia.
-      </p>
-    </div>
-  </div>
 
-  <!-- Scroll to Top Button -->
-  <button id="backToTopBtn" title="Go to top">
-    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+      <h1>Meet Our Team</h1>
+      <div class="teamcard-container">
+        <div class="teamcard-card">
+          <div class="teamcard-image"></div>
+          <div class="teamcard-info">
+            <span>Shubham Mehta</span>
+            <p>Project Manager</p>
+          </div>
+          <a href="#" class="teamcard-button">Connect</a>
+        </div>
+
+        <div class="teamcard-card">
+          <div class="teamcard-image"></div>
+          <div class="teamcard-info">
+            <span>Aniket Raut</span>
+            <p>Software Engineer</p>
+          </div>
+          <a href="#" class="teamcard-button">Connect</a>
+        </div>
+
+        <div class="teamcard-card">
+          <div class="teamcard-image"></div>
+          <div class="teamcard-info">
+            <span>Riya Sharma</span>
+            <p>UI/UX Designer</p>
+          </div>
+          <a href="#" class="teamcard-button">Connect</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="backToTopBtn" title="Go to top">
+      <span class="material-symbols-outlined">keyboard_arrow_up</span>
     </button>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script>
+      const msvData = [
+        {
+          title: "Mission",
+          description:
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ut aliquid voluptates odit, eveniet, in possimus nobis, a neque dolor quod veritatis fugit commodi inventore rerum asperiores illo? Odio dolor nemo adipisci aut modi iste commodi qui vel nulla tempore, et provident nisi id, maxime laudantium atque vero quaerat.",
+          img: "../pic/AboutUs/mission.png",
+          primaryColor: "rgb(236,245,255)",
+          hoverColor: "rgb(218,242,255)",
+        },
+        {
+          title: "Vision",
+          description:
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ut aliquid voluptates odit, eveniet, in possimus nobis, a neque dolor quod veritatis fugit commodi inventore rerum asperiores illo? Odio dolor nemo adipisci aut modi iste commodi qui vel nulla tempore, et provident nisi id, maxime laudantium atque vero quaerat.",
+          img: "../pic/AboutUs/vision.png",
+          primaryColor: "rgb(255,244,233)",
+          hoverColor: "rgb(255,239,210)",
+        },
+        {
+          title: "Values",
+          description:
+            " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ut aliquid voluptates odit, eveniet, in possimus nobis, a neque dolor quod veritatis fugit commodi inventore rerum asperiores illo? Odio dolor nemo adipisci aut modi iste commodi qui vel nulla tempore, et provident nisi id, maxime laudantium atque vero quaerat.",
+          img: "../pic/AboutUs/values.png",
+          primaryColor: "rgb(225,255,239)",
+          hoverColor: "rgb(211,255,238)",
+        },
+      ];
 
-  <script src="../script.js"></script>
-</body>
+      const msvContainer = document.querySelector(".msv");
 
+      msvData.forEach((aspect, index) => {
+        const msvItem = document.createElement("div");
+        msvItem.className = "msv-item";
+        msvItem.style.backgroundColor = aspect.primaryColor;
+        msvItem.style.border = "1px solid #ddd";
+
+        msvItem.innerHTML = `
+        <h3>${aspect.title}</h3>
+        <p>${aspect.description}</p>
+        <img src="${aspect.img}" alt="${aspect.title}" style="width:100px; height:100px;">
+      `;
+
+        msvItem.addEventListener("mouseenter", () => {
+          msvItem.style.backgroundColor = aspect.hoverColor;
+        });
+
+        msvItem.addEventListener("mouseleave", () => {
+          msvItem.style.backgroundColor = aspect.primaryColor;
+        });
+
+        msvContainer.appendChild(msvItem);
+      });
+    </script>
+
+    <script src="../script.js"></script>
+  </body>
 </html>

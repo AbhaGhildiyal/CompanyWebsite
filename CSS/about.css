@@ -1,45 +1,216 @@
-@import 'variables.css';
+@import "variables.css";
 
 html {
-    margin: 0;
-    padding: 0; 
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-img{
-    max-width: 100%;
-    display: block;
-  
+img {
+  max-width: 100%;
+  display: block;
 }
-  *,
-  *::after,
-  *::before{
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
-body{
-    margin: 0;
-    background-color: #eee;
-    color: var(--clr-accent-400);
-    font-family: var(--ff-base);
-    font-size: var(--fs-300) ;
-    font-weight: var(--fw-regular);
+body {
+  margin: 0;
+  background-color: #eee;
+  color: var(--clr-accent-400);
+  font-family: var(--ff-base);
+  font-size: var(--fs-300);
+  font-weight: var(--fw-regular);
 }
-.main-heading{
-    display: flex;
-    justify-content: center;
-    font-family: var(--ff-heading);
+.main-heading {
+  display: flex;
+  justify-content: center;
+  font-family: var(--ff-heading);
 }
-.paragraph{
-    padding: 30px 0;
-    margin: 0 7rem 0 7rem;
+.paragraph {
+  padding: 30px 0;
+  margin: 0 7rem 0 7rem;
 }
-.paragraph p{
-    margin-top: 14px;
-    margin-bottom: 26px;
-    font-family: var(--ff-base);
+.paragraph p {
+  margin-top: 14px;
+  margin-bottom: 26px;
+  font-family: var(--ff-base);
 }
-.paragraph h2{
-    font-family: var(--ff-heading);
-    border-left: 3px solid var(--clr-secondary-400);
-    padding-left: 1rem;
+.paragraph h2 {
+  font-family: var(--ff-heading);
+  border-left: 3px solid var(--clr-secondary-400);
+  padding-left: 1rem;
+}
+
+/* <===========>  ABOUT US <==========> */
+.AboutUs {
+  padding: 5vw;
+  padding-top: 0%;
+}
+
+.AboutUs h1 {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+}
+.AboutUs > p {
+  max-width: 1010px;
+  margin: 0% auto;
+  margin-bottom: 5vh;
+  font-size: 17px;
+  color: #757575;
+  text-align: center;
+}
+.msv-item:hover img {
+  transform: scale(1.2);
+}
+.msv-item:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.129);
+}
+
+.msv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.msv-item h3 {
+  margin: 0%;
+}
+.msv-item p {
+  color: #757575;
+  text-align: center;
+}
+.msv-item {
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.msv-item img {
+  width: 80%;
+  transition: all 0.3s ease;
+  height: 150px;
+  object-fit: contain;
+}
+@media screen and (max-width: 720px) {
+  .msv {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .msv-item {
+    width: 90%;
+  }
+}
+
+.teamcard-card {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #fffffe;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.teamcard-card::before {
+  content: "";
+  width: 350px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 3px solid #fefefe;
+  background: linear-gradient(
+    40deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  transition: all 0.5s ease;
+}
+
+.teamcard-card * {
+  z-index: 1;
+}
+
+.teamcard-image {
+  width: 90px;
+  height: 90px;
+  background-color: #1468bf;
+  border-radius: 50%;
+  border: 4px solid #fefefe;
+  margin-top: 30px;
+  transition: all 0.5s ease;
+}
+
+.teamcard-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.5s ease;
+}
+
+.teamcard-info span {
+  font-weight: 600;
+  font-size: 24px;
+  color: #161a42;
+  margin-top: 15px;
+  line-height: 5px;
+}
+
+.teamcard-info p {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.teamcard-button {
+  text-decoration: none;
+  background-color: #1468bf;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+  transition: all 0.5s ease;
+}
+
+.teamcard-card:hover::before {
+  width: 350px;
+  height: 300px;
+  border-bottom: none;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: scale(0.95);
+}
+
+.teamcard-card:hover .teamcard-info {
+  transform: translate(0%, -25%);
+}
+
+.teamcard-card:hover .teamcard-image {
+  transform: scale(2) translate(-60%, -40%);
+}
+
+.teamcard-button:hover {
+  background-color: #ff6844;
+  transform: scale(1.1);
+}
+
+/* Layout for multiple cards */
+.teamcard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
