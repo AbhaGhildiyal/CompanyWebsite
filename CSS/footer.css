@@ -161,7 +161,6 @@ ul {
 }
 
 .footer-widget ul li {
-  display: inline-block;
   float: left;
   width: 50%;
   margin-bottom: 12px;
@@ -206,13 +205,12 @@ ul {
 
 .copyright-area {
   padding: 25px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  margin-left: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin: 0;
 }
 
 .copyright-text p {
