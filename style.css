@@ -359,6 +359,11 @@ div.custom-aside {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
 }
+.container.copyright{
+  display: grid;
+  grid-gap: 3rem;
+}
+
 .services-col {
   border-radius: 10px;
   margin-bottom: 30px;
